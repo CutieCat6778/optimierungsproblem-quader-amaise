@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{amsmath, array}
+
+\title{%
+	Optimierungsproblem-Quader-Amaise \\
+	\large Mathe GFS}
+\date{December 2024}
+\author{Thinh Nguyen}
+
+\newenvironment{conditions}
+  {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+  {\end{tabular}\par\vspace{\belowdisplayskip}}
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage	
+	\pagenumbering{arabic}
+
+	\section{Problemstellung}
+		Eine Ameise möchte auf dem kürzesten Weg
+		von der Ecke eines Quaders zur direkt
+		gegenüberliegenden Ecke laufe. Der Quader
+		hat die Kantenlängen 8cm, 5cm und 3cm.
+	\subsection{Analyse}
+		Wir haben ein Quaders der eine
+		Grundfläche von 8cm und 5cm. Eine Höhe von
+		3cm. Wir wissen, dass ein Quader 6 Seiten
+		hat, deswegen haben wir:
+		\begin{itemize}
+			\item \textbf{2 Mal:} \( 8 \, \text{cm} \cdot 5 \, \text{cm} \)
+			\item \textbf{2 Mal:} \( 8 \, \text{cm} \cdot 3 \, \text{cm} \)
+			\item \textbf{2 Mal:} \( 5 \, \text{cm} \cdot 3 \, \text{cm} \)
+		\end{itemize}
+		Somit können wir die Oberflächeninhalt berechnen und können daraus eine Quadernetz bilden.
+
+		\begin{equation}
+			O_{quader} = 8cm * 5cm * 2 + 5cm * 3cm * 2 + 3cm * 8cm * 2
+		\end{equation}
+
+\end{document}
