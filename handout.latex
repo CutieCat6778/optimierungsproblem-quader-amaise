@@ -1,5 +1,6 @@
 \documentclass{article}
-\usepackage{amsmath, array}
+\usepackage{amsmath, array, graphicx}
+\usepackage[a4paper, total={6in,8in}]{geometry}
 
 \title{%
 	Optimierungsproblem-Quader-Amaise \\
@@ -18,11 +19,12 @@
 	\pagenumbering{arabic}
 
 	\section{Problemstellung}
+	\subsection{Problem}
 		Eine Ameise möchte auf dem kürzesten Weg
 		von der Ecke eines Quaders zur direkt
 		gegenüberliegenden Ecke laufe. Der Quader
 		hat die Kantenlängen 8cm, 5cm und 3cm.
-	\subsection{Analyse}
+	\subsection{Details}
 		Wir haben ein Quaders der eine
 		Grundfläche von 8cm und 5cm. Eine Höhe von
 		3cm. Wir wissen, dass ein Quader 6 Seiten
@@ -35,7 +37,29 @@
 		Somit können wir die Oberflächeninhalt berechnen und können daraus eine Quadernetz bilden.
 
 		\begin{equation}
-			O_{quader} = 8cm * 5cm * 2 + 5cm * 3cm * 2 + 3cm * 8cm * 2
+			O_{quader} = 8cm \cdot 5cm
+			\cdot 2 + 5cm \cdot 3cm
+			\cdot 2 + 3cm \cdot 8cm
+			\cdot 2
 		\end{equation}
+		\begin{figure}[h]
+			\includegraphics[scale=0.4]{assets/2024-11-24_11-59-29.png}
+			\centering
+			\caption{Quader in 3D}
+		\end{figure}
+	\subsection{Quadernetz}
+		Von diesem Quader können wir
+		daraus einen Quadernetz bilden, es
+		wird 6 Seiten haben.
+		\begin{equation}
+			A_{quadernetz} = O_{quader}
+		\end{equation}
+		\begin{figure}[h]
+			\includegraphics[scale=0.4]{assets/2024-11-24_11-52-31.png}
+			\centering
+			\caption{Quader in
+			Netzansicht}
+		\end{figure}
+
 
 \end{document}
